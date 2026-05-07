@@ -11,21 +11,22 @@ import {
 } from "@react-three/rapier";
 
 const textureLoader = new THREE.TextureLoader();
+const BASE = import.meta.env.BASE_URL;
 const imageUrls = [
   // Prioritized to match core stack listed in SDE resume
-  "/images/python.svg",
-  "/images/java.svg",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/kafka.svg",
-  "/images/docker.svg",
-  "/images/kubernetes.svg",
-  "/images/neo4j.svg",
-  "/images/react.webp",
-  "/images/next.webp",
-  "/images/mysql.webp",
+  `${BASE}images/python.svg`,
+  `${BASE}images/java.svg`,
+  `${BASE}images/typescript.webp`,
+  `${BASE}images/javascript.webp`,
+  `${BASE}images/react2.webp`,
+  `${BASE}images/next2.webp`,
+  `${BASE}images/kafka.svg`,
+  `${BASE}images/docker.svg`,
+  `${BASE}images/kubernetes.svg`,
+  `${BASE}images/neo4j.svg`,
+  `${BASE}images/react.webp`,
+  `${BASE}images/next.webp`,
+  `${BASE}images/mysql.webp`,
 ];
 
 const missingSkills = [
@@ -289,7 +290,7 @@ const TechStack = () => {
           ))}
         </Physics>
         <Environment
-          files="/models/char_enviorment.hdr"
+          files={`${import.meta.env.BASE_URL}models/char_enviorment.hdr`}
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />
