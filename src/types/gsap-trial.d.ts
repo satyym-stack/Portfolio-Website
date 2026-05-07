@@ -1,4 +1,4 @@
-declare module "gsap-trial/SplitText" {
+declare module "gsap/SplitText" {
   export class SplitText {
     chars: HTMLElement[];
     lines: HTMLElement[];
@@ -13,4 +13,4 @@ declare module "gsap-trial/SplitText" {
   }
 }
 
-declare module "gsap-trial/ScrollSmoother";
+declare module "gsap/ScrollSmoother";
